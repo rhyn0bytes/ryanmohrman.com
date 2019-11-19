@@ -6,9 +6,16 @@
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1em;
+  }
+}
+
 @media only screen and (min-width: 768px) {
-  .navbar-custom {
-    padding: 20px 0;
+  .custom-navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -27,8 +34,8 @@
   -moz-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
   left: 50%;
-  width: 50px;
-  /* margin-top: 60px; */
+  width: 75px;
+  margin-top: 50px;
 }
 .avatar-container .avatar-img-border {
   width: 100%;
@@ -49,7 +56,7 @@
 @media only screen and (min-width: 768px) {
   .profile-container {
     width: 150px;
-    margin-top: 120px;
+    margin-top: 90px;
   }
   
   .avatar-container .avatar-img-border {
