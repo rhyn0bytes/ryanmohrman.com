@@ -6,29 +6,10 @@
     {% include header.html %}
   
     <main class="flex-shrink-0" role="main">
-      <div class="container">
-        <h1 class="mt-5">Testing 1, 2, 3...</h1>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-        <p>This paragraph is here to test the scroll functionality.</p>
-      </div>
+      {{ content }}
     </main>
-    <footer class="footer mt-auto py-3">
-      <div class="container text-center">
-        <span class="text-muted">Place sticky footer content here.</span>
-      </div>
-    </footer>
+    
+    {% include footer.html %}
     
     <!-- Bootstrap 4 Required Javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
