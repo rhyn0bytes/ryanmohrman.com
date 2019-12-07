@@ -74,5 +74,18 @@
 }
 
 main > .container {
-  padding: 60px calc(env(safe-area-inset-right) + 1rem) 0 calc(env(safe-area-inset-left) + 1rem);
+  padding: 100px calc(env(safe-area-inset-right) + 1rem) 0 calc(env(safe-area-inset-left) + 1rem);
+}
+
+.borderless {
+  border: 0;
+}
+
+#social-icons li {
+  background-color: transparent!important;
+}
+
+footer {
+  background: #F5F5F5;
+  border-top: 1px #EAEAEA solid;
 }
