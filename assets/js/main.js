@@ -4,9 +4,11 @@
   // Hide Profile Image after scrolling
   $(window).scroll(function() {
     if ($(".navbar").offset().top > 50 || $("#navbarCollapse").hasClass("show")) { // added check for navbar collapse to prevent profile from showing when collapsing on mobile
-        $(".profile-container").hide(); 
+        $(".profile-container").hide();
+        $("nav").removeClass('custom-navbar') 
     } else {
         $(".profile-container").show();
+        $("nav").addClass('custom-navbar') 
     }
   });
 
