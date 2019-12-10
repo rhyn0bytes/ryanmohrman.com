@@ -1,0 +1,11 @@
+// Skills icons styles
+.borderless {
+  border: none;
+}
+
+.dev-icons {
+  color: $secondary;
+  i:hover {
+    color: $primary;
+  }
+}

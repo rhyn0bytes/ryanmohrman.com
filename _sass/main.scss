@@ -1,110 +1,12 @@
-/* universal fixes for iPhone X, Xs, etc. for safe area around "notch" -- Thanks Apple... */
+// Import custom variables (overrides Bootstrap default variables)
+@import "./variables.scss";
 
-// body {
-//   padding-left: env(safe-area-inset-left);
-//   padding-right: env(safe-area-inset-right);
-// }
+// Import Bootstrap
+@import "bootstrap/bootstrap.scss";
 
-/* navbar is still broken, but this works best... */
-.navbar {
-  padding-left: calc(env(safe-area-inset-left) + 1rem);
-  padding-right: calc(env(safe-area-inset-right) + 1rem);
-}
-
-/* navbar-brand font should shrink on small screens */
-
-@media only screen and (max-width: 600px) {
-  .navbar-brand {
-    font-size: 1em;
-  }
-}
-
-/* profile styles are designed for mobile first - adapted from Beautiful Jekyll by Dean Attali */
-
-.profile-container {
-  opacity: 1;
-  position: absolute;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -moz-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-  left: 50%;
-  top: 0;
-  width: 75px;
-  margin-top: 25px;
-}
-
-.profile-img-border {
-  width: 100%;
-  border-radius: 50%;
-  margin-left: -50%;
-  display: inline-block;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-.profile-img {
-  width: 100%;
-  border-radius: 50%;
-  display: block;
-}
-
-@media only screen and (min-width: 600px) {
-  .profile-container {
-    width: 150px;
-    margin-top: 10px;
-  }
-
-  .custom-navbar {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    .navbar-brand {
-      font-size: 1.5rem;
-    }
-    .navbar-collapse {
-      font-size: 1.25rem;
-    }
-  }
-  
-  .profile-img-border {
-    width: 100%;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
-  }
-}
-
-.masthead {
-  height: 65vh;
-  min-height: 500px;
-  background: linear-gradient(to bottom,rgba(64,64,64,.8) 0,rgba(64,64,64,.8) 100%),url('/assets/img/boulder-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  .howdy, .personal-tags {
-    font-family: "Rubik", sans-serif;
-  }
-}
-
-main > .container {
-  padding: 100px calc(env(safe-area-inset-right) + 1rem) 0 calc(env(safe-area-inset-left) + 1rem);
-}
-
-.borderless {
-  border: 0;
-}
-
-#social-icons li {
-  background-color: transparent!important;
-}
-
-footer {
-  background: #F5F5F5;
-  border-top: 1px #EAEAEA solid;
-}
-
-.divider {
-  max-width: 4rem;
-  border-width: .25rem;
-  border-color: #ffffff;
-}
+// Import custom styles
+@import "./global.scss";
+@import "./navbar.scss";
+@import "./masthead.scss";
+@import "./skills.scss";
+@import "./portfolio.scss";

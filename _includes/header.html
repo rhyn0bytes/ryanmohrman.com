@@ -3,17 +3,22 @@
 
   {% if layout.masthead %}
   <!-- masthead image and welcome text -->
-  <div class="masthead">
+  <!-- Masthead -->
+  <header class="masthead">
     <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-12 text-center">
-          <h1 class="font-weight-bold text-white howdy">Howdy, I'm Ryan</h1>
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <img alt="" src="/assets/img/ryan-profile.png" class="masthead-profile mb-3">
+          <h1 class="text-white font-weight-bold">Howdy, I'm Ryan</h1>
           <hr class="divider my-4">
-          <p class="lead text-white personal-tags">Engineer | Musician | Brewer</p>
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 font-weight-light mb-5">Engineer | Musician | Brewer</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Get to Know Me</a>
         </div>
       </div>
     </div>
-  </div>
+  </header>
   {% else %}
   <div class="dynamic-spacer"></div>
   {% endif %}
