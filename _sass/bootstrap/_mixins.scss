@@ -2,8 +2,8 @@
 //
 // Used in conjunction with global variables to enable certain theme features.
 
-// Vendor
-@import "vendor/rfs";
+// Vendor - changing folder name to get around vendor folder from gitignore
+@import "bootstrapVendor/rfs";
 
 // Deprecate
 @import "mixins/deprecate";
