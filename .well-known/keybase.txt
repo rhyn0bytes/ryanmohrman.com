@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/rhyno
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ryanmohrman.com
+  * I am rhyno (https://keybase.io/rhyno) on keybase.
+  * I have a public key with fingerprint E37C FEE0 6987 30AD FE50  7CE7 31B2 43A2 88B8 37C8
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101924feff8017835a7df6f3f9d5a68c7082262b5c91edaad1a067a1f5f648bfd8e0a",
+      "fingerprint": "e37cfee0698730adfe507ce731b243a288b837c8",
+      "host": "keybase.io",
+      "key_id": "31b243a288b837c8",
+      "kid": "0101924feff8017835a7df6f3f9d5a68c7082262b5c91edaad1a067a1f5f648bfd8e0a",
+      "uid": "696d5f24bc1cfbb42a88c3c28052cd19",
+      "username": "rhyno"
+    },
+    "service": {
+      "hostname": "ryanmohrman.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1576260765,
+  "expire_in": 157680000,
+  "prev": "3308b569c616275ecb528b38673da6d0b9a410ce49b6a889d80f12ad18f1720c",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.3
+Comment: https://keybase.io/crypto
+
+yMIoAnicrVJbbAxRGN6iaF3jlmiIdISINnXOzM6ZMyuCIDSiXqRNZZvtuc3uWDuz
+ZrdlSYO4hpbyJC69aCohqfCAiFSrbpHGpVFSmogI4vZEH9yCM8WbR+fl5Pz/933n
++/78N8YMDeRmPUArBqYsOtqY1X3tSFWg4lPviS0KdXlGCW1R4mLwEuu5SKUjcZsr
+IQVAAE01aAnLwgAaWNOJwS1kaZbJdYIwMwBWVaRSnZlQcEI4JAAZBFq6hYKYWhwL
+QJRCxbKdqPCSnu2kpazQDGYJAZCJDQ0QbgkdGEwYGqRqUCMqxhRLCJbEmJvyGdIc
+JSlRZLuyJh+RQXv/wP9n31WDcshEXLfUIGWQWZQGVYIx05iKga4yDk0fmBKeQxJC
+or1YxnGVmkJFlqptJvyp+jH+tjPESbgxL0GcIuYmJDfpuWmXuetlM5ZOJ1Mhn5zO
+JH30RkEjf3Qi1Ha4nKNkVAsvZbuOEoISydK2Lwx1A6kIGEgvVMSmpO2JiO38LmMg
+j/+PqPanpgFMdWQyBJFq6IJRXcVUw8jQOEEcUJMEIWAiaFIkg5ocAwuqckTYgoYK
+mOIn2yAjhiCWPklUaqbsqEPSVZ5Qaro6w8MCWbmB4dlD/AUL5OaM/7t214pH/Ex0
+luvjmpqbfkxo6Vn2sm6IWZt3c3zO1jsdc7KrG49fh3OfXXj99WD/9PqTu47dX7bW
+nPFz4fcw7L/w9mlPx4zpV+LR2PAFQ0fnH7j67suJuorZBSa/3Vofr6H07pOx2xOH
+ioyyhztetTyvuHxl97O8Kee6F/eEy05NGxG71xy+U9mgs9Kno1a3b32SzyvX7VXt
+gvrSlbNKtn00V93Q5xUn9j+qM86f9mrJocddXe3vJ0XXjHxxpmBzw5KHjfsPn94Z
+WYQ33h7IGZtPd/Y1fy6/230usfxS64qlXWdKOvIHevd8wG/aatva55c0tIWzF1xs
+mtw49c3EbzMf3MruO3u+PxPfJ3ZX/AIA2UTx
+=BHGO
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rhyno
+
+==================================================================
