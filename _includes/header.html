@@ -1,5 +1,9 @@
 <header>
+  {% if layout.map %}
+  {% include map-navbar.html %}
+  {% else %}
   {% include navbar.html %}
+  {% endif %}
 
   {% if layout.masthead %}
   <!-- masthead image and welcome text -->
@@ -15,6 +19,25 @@
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white-75 font-weight-light mb-5">Engineer | Musician | Brewer</p>
           <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Get to Know Me</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  {% elsif layout.map %}
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <img alt="" src="/assets/img/ryan-profile.png" class="masthead-profile mb-3">
+          <h1 class="text-white font-weight-bold">Howdy, I'm Ryan</h1>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 font-weight-light mb-5">The map below is used to visualize my roadtrips with my two dogs. We have silly requirements to
+            visit as many of the 48 contiguous states as we can before we die. I used a simple html5 map builder to visualize the current state of our travels 
+            and will work on a way to dynamically update the data as we travel more. Latest update: August 18, 2021.
+          </p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#map">On to the Map</a>
         </div>
       </div>
     </div>
