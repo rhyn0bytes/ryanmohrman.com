@@ -180,8 +180,8 @@ var simplemaps_usmap_mapdata={
     },
     AR: {
       name: "Arkansas",
-      description: "Visit Badges: Ryan",
-      color: "#abdda4"
+      description: "Visit Badges: Kira, Ryan, Zeke",
+      color: "#1a9641"
     },
     MO: {
       name: "Missouri",
