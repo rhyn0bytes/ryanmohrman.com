@@ -270,7 +270,8 @@ var simplemaps_usmap_mapdata={
     },
     MT: {
       name: "Montana",
-      description: "Visit Badges: None"
+      description: "Visit Badges: Kira, Ryan, Zeke",
+      color: "#1a9641"
     },
     CO: {
       name: "Colorado",
@@ -279,8 +280,8 @@ var simplemaps_usmap_mapdata={
     },
     UT: {
       name: "Utah",
-      description: "Visit Badges: Ryan",
-      color: "#abdda4"
+      description: "Visit Badges: Kira, Ryan, Zeke",
+      color: "#1a9641"
     },
     AZ: {
       name: "Arizona",
@@ -294,13 +295,13 @@ var simplemaps_usmap_mapdata={
     },
     OR: {
       name: "Oregon",
-      description: "Visit Badges: Ryan",
-      color: "#abdda4"
+      description: "Visit Badges: Kira, Ryan, Zeke",
+      color: "#1a9641"
     },
     WA: {
       name: "Washington",
-      description: "Visit Badges: Ryan",
-      color: "#abdda4"
+      description: "Visit Badges: Kira, Ryan, Zeke",
+      color: "#1a9641"
     },
     CA: {
       name: "California",
@@ -314,7 +315,8 @@ var simplemaps_usmap_mapdata={
     },
     ID: {
       name: "Idaho",
-      description: "Visit Badges: None"
+      description: "Visit Badges: Kira, Ryan, Zeke",
+      color: "#1a9641"
     },
     GU: {
       name: "Guam",
