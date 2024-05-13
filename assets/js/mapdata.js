@@ -285,13 +285,13 @@ var simplemaps_usmap_mapdata={
     },
     AZ: {
       name: "Arizona",
-      description: "Visit Badges: Ryan",
-      color: "#abdda4"
+      description: "Visit Badges: Kira, Ryan, Zeke",
+      color: "#1a9641"
     },
     NV: {
       name: "Nevada",
-      description: "Visit Badges: Ryan",
-      color: "#abdda4"
+      description: "Visit Badges: Kira, Ryan, Zeke",
+      color: "#1a9641"
     },
     OR: {
       name: "Oregon",
@@ -305,8 +305,8 @@ var simplemaps_usmap_mapdata={
     },
     CA: {
       name: "California",
-      description: "Visit Badges: Ryan",
-      color: "#abdda4"
+      description: "Visit Badges: Kira, Ryan, Zeke",
+      color: "#1a9641"
     },
     MI: {
       name: "Michigan",
