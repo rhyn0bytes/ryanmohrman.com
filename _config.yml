@@ -32,13 +32,8 @@ linkedin_username:  ryanmohrman
 
 # Build settings
 markdown:       kramdown
-paginate:       5
-paginate_path:  "/posts/page:num/"
-permalink:      /:year/:month/:title:output_ext
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
 sass:
   sass_dir: _sass
 
