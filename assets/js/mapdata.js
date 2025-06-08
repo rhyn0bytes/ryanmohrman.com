@@ -210,8 +210,8 @@ var simplemaps_usmap_mapdata={
     },
     LA: {
       name: "Louisiana",
-      description: "Visit Badges: Ryan",
-      color: "#abdda4"
+      description: "Visit Badges: Ryan, Zeke",
+      color: "#1a9641"
     },
     MS: {
       name: "Mississippi",

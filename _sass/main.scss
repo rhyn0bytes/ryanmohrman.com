@@ -10,3 +10,13 @@
 @import "masthead";
 @import "skills";
 @import "portfolio";
+
+// Set additional custom styles
+.my-8 {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
+}
+
+.map-subtitle {
+  font-size: 1.5rem !important;
+}
