@@ -1,0 +1,108 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}        % Style options: 'casual', 'classic', 'oldstyle', 'banking'
+\moderncvcolor{blue}           % Color options: 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry}
+\usepackage{multicol}
+
+% Adjust label column width to reduce wrapping
+\setlength{\hintscolumnwidth}{2.35cm}
+\AtBeginDocument{\recomputelengths}
+
+% Personal info
+\name{Ryan}{Mohrman}
+\title{Staff Software Engineer}                    
+\address{Denver, CO}{}{}
+\phone[mobile]{(720) 688 6043}
+\email{ryan.mohrman@outlook.com}
+\homepage{ryanmohrman.com}
+\social[github]{rhyn0bytes} % optional
+\quote{Engineering solutions through cross-functional alignment and clear communication with every layer of the organization.}
+
+\begin{document}
+
+\makecvtitle
+
+\section{Skills}
+\cvitem{Languages}{Ruby, GraphQL, TypeScript, Python, JavaScript, SQL}
+\cvitem{Frameworks}{VueJS, Ruby on Rails, ReactNative}
+\cvitem{Tools}{PostgreSQL, Redis, Docker, Kubernetes, GitHub Actions, AWS, Azure}
+\cvitem{Specialties}{CI/CD, API design, codebase modernization, team mentorship, domain modeling}
+
+\section{Experience}
+\cventry{2022 -- Present}{Staff Software Engineer}{Groundfloor Finance}{Denver, CO}{}{
+\begin{itemize}
+    \item Led modernization of the company’s aging codebase, replacing legacy code with performant design patterns and reducing average query times by 75\%
+    \item Designed and implemented the Auto Investing algorithm, responsible for managing over 40\% of investor activity and ensuring a diversified investment experience
+    \item Architected and launched Auto Investor account types, introducing performance dashboards, allocation forecasting tools, and custom reporting for all investors
+    \item Overhauled security and compliance posture by upgrading core packages, enforcing dependency scanning, and contributing to secure-by-default design standards
+    \item Introduced and scaled observability using Datadog, Rollbar, and structured logging, increasing deploy confidence and reducing issue triage time
+    \item Enhanced CI/CD pipelines with GitHub Actions and pre-deploy checks, shortening release cycles and improving engineering velocity
+    \item Partnered with product and executive teams to define quarterly OKRs and align engineering efforts with business goals
+    \item Mentored junior engineers, advocated for developer experience improvements, and led internal architecture reviews
+\end{itemize}}
+
+\cventry{2020 -- 2022}{Engineering Manager/Sr. Software Engineer}{W Energy Software}{Denver, CO}{}{
+\begin{itemize}
+    \item Managed and mentored a team of 7 developers, improving onboarding, delivery cadence, and collaboration with architecture and executive leadership
+    \item Reformed release process by transitioning from per-client branches to unified, periodic releases—drastically reducing merge conflicts and production bugs
+    \item Led Docker containerization and service decomposition efforts to shift a legacy monolith toward a scalable, service-oriented architecture
+    \item Established CI/CD pipelines, introduced test coverage gates, and integrated tools like SonarCloud and Mabl to enforce code quality and automated testing
+\end{itemize}}
+
+\cventry{2018 -- 2019}{Product Manager}{Actenum Corporation}{Denver, CO}{}{
+\begin{itemize}
+    \item Introduced development team to product concepts, agile development rituals, and release process
+    \item Ensured general availability of Upstream, Version 6.6 released on October 30, 2019
+\end{itemize}}
+
+\cventry{2017 -- 2018}{Senior Solutions Architect}{Aucerna F.K.A. Energy Navigator}{Denver, CO}{}{
+\begin{itemize}
+    \item Led a DevOps initiative to build a sales demo and engineering test tool, and personally developed the integration automation tools and the SQL server and application server configurations
+    \item Wrote a data integration tool to easily share data and workflows with the production forecasting and planning teams
+\end{itemize}}
+
+\cventry{2015 -- 2017}{US Product Manager}{Aucerna F.K.A. Energy Navigator}{Houston, TX}{}{
+\begin{itemize}
+    \item Analyzed US competitive landscape and partnered with Sales/Marketing to position product against incumbents
+    \item Developed prototype models and calculations to align roadmap with client needs
+    \item Defined epics and prioritized development to support US market expansion
+\end{itemize}}
+
+\cventry{2013 -- 2017}{Technical Sales Engineer}{Aucerna F.K.A. Energy Navigator}{Houston, TX}{}{
+\begin{itemize}
+    \item Led the largest implementation in US company history, consolidating 140 separate databases into a single source of information, reducing the reserves process to hours vs. weeks
+    \item Doubled sales of Value Navigator YoY for 3 years, increasing contribution revenue from 5\% to 40\%
+\end{itemize}}
+
+\cventry{2012 -- 2013}{Senior Software Engineer/Product Manager}{Enerpact}{Houston, TX}{}{
+\begin{itemize}
+    \item Acted as both engineer and product liaison between US clients and overseas dev team, introducing source control and implementing new development practices
+    \item Delivered requirements, POCs, and training materials for major feature releases
+\end{itemize}}
+
+\cventry{2010 -- 2012}{Lead Web Developer}{Harold Vance Petroleum Engineering Department}{College Station, TX}{}{
+\begin{itemize}
+    \item Rebuilt department website using Umbraco CMS; administered security and hosted web infrastructure
+    \item Supported faculty and IT on all web-related requests and updates
+\end{itemize}}
+
+\cventry{2009 -- 2010}{Application Developer}{Reynolds and Reynolds Company}{College Station, TX}{}{
+\begin{itemize}
+    \item Migrated legacy .NET applications and maintained marketing/advertising integrations while completing undergraduate studies
+\end{itemize}}
+
+\section{Projects}
+\cvitem{CI/CD}{Deployed Docker + GitHub Actions for auto-testing and deployments}
+\cvitem{Codebase Modernization}{Refactored legacy codebase into modular services and updated queries to more efficiently retrieve data}
+\cvitem{Internal Tools}{Created dashboards to monitor deploy health and system metrics}
+
+\section{Education}
+\cventry{}{MS in Computer Science}{Georgia Institute of Technology}{Atlanta, GA}{}{}
+\cventry{}{BS in Petroleum Engineering}{Texas A\&M University}{College Station, TX}{}{}
+
+\section{Certifications}
+\cvitem{}{Certified Scrum Product Owner - Scrum Alliance}
+\cvitem{}{PMC III - Pragmatic Marketing}
+
+\end{document}
