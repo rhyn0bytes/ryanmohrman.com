@@ -1,0 +1,26 @@
+# Generated files
+resume_content.tex
+resume_sections.tex
+base.tex
+*.pdf
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~

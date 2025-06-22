@@ -1,0 +1,128 @@
+personal_info:
+  first_name: Ryan
+  last_name: Mohrman
+  title: Staff Software Engineer
+  address: Denver, CO
+  phone: (720) 688 6043
+  email: ryan.mohrman@outlook.com
+  homepage: ryanmohrman.com
+  github: rhyn0bytes
+  quote: Engineering solutions through cross-functional alignment and clear communication with every layer of the organization.
+
+skills:
+  Languages: Ruby, GraphQL, TypeScript, Python, JavaScript, SQL
+  Frameworks: VueJS, Ruby on Rails, ReactNative
+  Tools: PostgreSQL, Redis, Docker, Kubernetes, GitHub Actions, AWS, Azure
+  Specialties: CI/CD, API design, codebase modernization, team mentorship, domain modeling
+
+experience:
+  - position: Staff Software Engineer
+    company: Groundfloor Finance
+    location: Denver, CO
+    period: 2022 -- Present
+    description: ""
+    achievements:
+      - Led modernization of the company's aging codebase, replacing legacy code with performant design patterns and reducing average query times by 75%
+      - Designed and implemented the Auto Investing algorithm, responsible for managing over 40% of investor activity and ensuring a diversified investment experience
+      - Architected and launched Auto Investor account types, introducing performance dashboards, allocation forecasting tools, and custom reporting for all investors
+      - Overhauled security and compliance posture by upgrading core packages, enforcing dependency scanning, and contributing to secure-by-default design standards
+      - Introduced and scaled observability using Datadog, Rollbar, and structured logging, increasing deploy confidence and reducing issue triage time
+      - Enhanced CI/CD pipelines with GitHub Actions and pre-deploy checks, shortening release cycles and improving engineering velocity
+      - Partnered with product and executive teams to define quarterly OKRs and align engineering efforts with business goals
+      - Mentored junior engineers, advocated for developer experience improvements, and led internal architecture reviews
+
+  - position: Engineering Manager/Sr. Software Engineer
+    company: W Energy Software
+    location: Denver, CO
+    period: 2020 -- 2022
+    description: ""
+    achievements:
+      - Managed and mentored a team of 7 developers, improving onboarding, delivery cadence, and collaboration with architecture and executive leadership
+      - Reformed release process by transitioning from per-client branches to unified, periodic releases—drastically reducing merge conflicts and production bugs
+      - Led Docker containerization and service decomposition efforts to shift a legacy monolith toward a scalable, service-oriented architecture
+      - Established CI/CD pipelines, introduced test coverage gates, and integrated tools like SonarCloud and Mabl to enforce code quality and automated testing
+
+  - position: Product Manager
+    company: Actenum Corporation
+    location: Denver, CO
+    period: 2018 -- 2019
+    description: ""
+    achievements:
+      - Introduced development team to product concepts, agile development rituals, and release process
+      - Ensured general availability of Upstream, Version 6.6 released on October 30, 2019
+
+  - position: Senior Solutions Architect
+    company: Aucerna F.K.A. Energy Navigator
+    location: Denver, CO
+    period: 2017 -- 2018
+    description: ""
+    achievements:
+      - Led a DevOps initiative to build a sales demo and engineering test tool, and personally developed the integration automation tools and the SQL server and application server configurations
+      - Wrote a data integration tool to easily share data and workflows with the production forecasting and planning teams
+
+  - position: US Product Manager
+    company: Aucerna F.K.A. Energy Navigator
+    location: Houston, TX
+    period: 2015 -- 2017
+    description: ""
+    achievements:
+      - Analyzed US competitive landscape and partnered with Sales/Marketing to position product against incumbents
+      - Developed prototype models and calculations to align roadmap with client needs
+      - Defined epics and prioritized development to support US market expansion
+
+  - position: Technical Sales Engineer
+    company: Aucerna F.K.A. Energy Navigator
+    location: Houston, TX
+    period: 2013 -- 2017
+    description: ""
+    achievements:
+      - Led the largest implementation in US company history, consolidating 140 separate databases into a single source of information, reducing the reserves process to hours vs. weeks
+      - Doubled sales of Value Navigator YoY for 3 years, increasing contribution revenue from 5% to 40%
+
+  - position: Senior Software Engineer/Product Manager
+    company: Enerpact
+    location: Houston, TX
+    period: 2012 -- 2013
+    description: ""
+    achievements:
+      - Acted as both engineer and product liaison between US clients and overseas dev team, introducing source control and implementing new development practices
+      - Delivered requirements, POCs, and training materials for major feature releases
+
+  - position: Lead Web Developer
+    company: Harold Vance Petroleum Engineering Department
+    location: College Station, TX
+    period: 2010 -- 2012
+    description: ""
+    achievements:
+      - Rebuilt department website using Umbraco CMS; administered security and hosted web infrastructure
+      - Supported faculty and IT on all web-related requests and updates
+
+  - position: Application Developer
+    company: Reynolds and Reynolds Company
+    location: College Station, TX
+    period: 2009 -- 2010
+    description: ""
+    achievements:
+      - Migrated legacy .NET applications and maintained marketing/advertising integrations while completing undergraduate studies
+
+projects:
+  CI/CD: Deployed Docker + GitHub Actions for auto-testing and deployments
+  Codebase Modernization: Refactored legacy codebase into modular services and updated queries to more efficiently retrieve data
+  Internal Tools: Created dashboards to monitor deploy health and system metrics
+
+education:
+  - degree: MS in Computer Science
+    institution: Georgia Institute of Technology
+    location: Atlanta, GA
+    year: ""
+    description: ""
+
+  - degree: BS in Petroleum Engineering
+    institution: Texas A&M University
+    location: College Station, TX
+    year: ""
+    description: ""
+
+certifications:
+  - Certified Scrum Product Owner - Scrum Alliance
+  - PMC III - Pragmatic Marketing
