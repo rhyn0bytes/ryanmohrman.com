@@ -1,7 +1,7 @@
 personal_info:
   first_name: Ryan
   last_name: Mohrman
-  title: Staff Software Engineer
+  title: Principal Software Engineer
   address: Denver, CO
   phone: (720) 688 6043
   email: ryan.mohrman@outlook.com
@@ -16,7 +16,7 @@ skills:
   Specialties: CI/CD, API design, codebase modernization, team mentorship, domain modeling
 
 experience:
-  - position: Staff Software Engineer
+  - position: Principal Software Engineer
     company: Groundfloor Finance
     location: Denver, CO
     period: 2022 -- Present
