@@ -1,11 +1,13 @@
 # Ryan Mohrman's Personal Website
 
-This personal website is designed, built by, and managed by me as a place to share my current projects and to let people get to know me. 
+This personal website is designed, built by, and managed by me as a place to share my current projects and to let people get to know me.
 
 ## Site Preview
+
 ![Site Preview](/assets/img/personal-website.jpg)
 
 ## Design
+
 The initial design is based on [StartBootstrap's Creative Theme](https://startbootstrap.com/themes/creative/), and large modifications were made to make the website my own. The biggest change currently is to the portfolio section which now uses Bootstrap4's card example.
 
 ```html
@@ -24,4 +26,3 @@ The initial design is based on [StartBootstrap's Creative Theme](https://startbo
   </div>
 </div>
 ```
-

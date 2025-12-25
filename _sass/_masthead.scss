@@ -38,4 +38,37 @@ header.masthead {
       font-size: 3.5rem;
     }
   }
+
+  // Small masthead styling for non-home pages
+  &.masthead-small {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    height: auto;
+    min-height: auto;
+    
+    .masthead-profile {
+      width: 8rem;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    @media (min-width: 992px) {
+      padding-top: calc(#{$navbar-height} + 3rem);
+      padding-bottom: 3rem;
+      height: auto;
+      min-height: auto;
+      
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+    
+    @media (min-width: 1200px) {
+      h1 {
+        font-size: 2.75rem;
+      }
+    }
+  }
 }
