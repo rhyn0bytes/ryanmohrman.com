@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔥 CLICK ME NOW 🔥</title>
+  <style>
+    /* GLOBAL BAD IDEAS */
+    body {
+      margin: 0;
+      font-family: Comic Sans MS, Comic Sans, cursive;
+      background: repeating-linear-gradient(
+        45deg,
+        hotpink,
+        hotpink 20px,
+        lime 20px,
+        lime 40px
+      );
+      cursor: progress;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+      color: yellow;
+      text-shadow: 4px 4px red;
+      margin-top: 40px;
+      animation: wiggle 0.3s infinite;
+    }
+
+    @keyframes wiggle {
+      0% { transform: rotate(-2deg); }
+      50% { transform: rotate(2deg); }
+      100% { transform: rotate(-2deg); }
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    /* THE WORST CTA BUTTON */
+    .cta {
+      font-size: 2.5rem;
+      padding: 30px 60px;
+      border: 8px dashed cyan;
+      background: red;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      animation: flash 0.15s infinite, grow 1s infinite;
+      cursor: pointer;
+      box-shadow: 0 0 40px yellow;
+    }
+
+    @keyframes flash {
+      0% { background: red; color: white; }
+      50% { background: yellow; color: black; }
+      100% { background: red; color: white; }
+    }
+
+    @keyframes grow {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    /* CONFETTI */
+    .confetti {
+      position: fixed;
+      width: 10px;
+      height: 10px;
+      top: -10px;
+      animation: fall linear forwards;
+      z-index: 9999;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: black;
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 10px;
+      animation: marquee 5s linear infinite;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <h1>WELCOME TO THE INTERNET</h1>
+
+  <div class="container">
+    <div class="cta" id="cta">CLICK ME OR ELSE</div>
+    <p style="font-size:2rem;color:blue;background:white;padding:10px;">100% GUARANTEED TRUSTED ⭐⭐⭐⭐⭐</p>
+  </div>
+
+  <footer>
+    🚨 LIMITED TIME OFFER 🚨 LIMITED TIME OFFER 🚨 LIMITED TIME OFFER 🚨
+  </footer>
+
+  <script>
+    const colors = ['red', 'yellow', 'lime', 'cyan', 'magenta', 'orange'];
+    const cta = document.getElementById('cta');
+
+    function launchConfetti(amount = 80) {
+      for (let i = 0; i < amount; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+        confetti.style.left = Math.random() * 100 + 'vw';
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.animationDuration = (Math.random() * 2 + 1) + 's';
+        confetti.style.opacity = Math.random();
+        confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+        document.body.appendChild(confetti);
+
+        setTimeout(() => confetti.remove(), 3000);
+      }
+    }
+
+    cta.addEventListener('click', () => {
+      launchConfetti(150);
+      alert('🎉 CONGRATULATIONS 🎉\nYou clicked the button.');
+    });
+
+    // Auto-fire confetti occasionally because restraint is for cowards
+    setInterval(() => launchConfetti(30), 3000);
+  </script>
+</body>
+</html>
