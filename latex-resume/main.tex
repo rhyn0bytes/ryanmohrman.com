@@ -1,0 +1,22 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}        % Style options: 'casual', 'classic', 'oldstyle', 'banking'
+\moderncvcolor{blue}           % Color options: 'blue', 'orange', 'green', 'red', 'purple', 'grey', 'black'
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry}
+\usepackage{multicol}
+
+% Adjust label column width to reduce wrapping
+\setlength{\hintscolumnwidth}{2.35cm}
+\AtBeginDocument{\recomputelengths}
+
+% Include generated personal info and content from YAML
+\input{resume_content.tex}
+
+\begin{document}
+
+\makecvtitle
+
+% Include generated sections from YAML
+\input{resume_sections.tex}
+
+\end{document}

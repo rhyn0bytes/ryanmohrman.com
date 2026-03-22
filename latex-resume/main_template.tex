@@ -5,6 +5,28 @@
 \usepackage[scale=0.75]{geometry}
 \usepackage{multicol}
 
+% Pin palette to match the published resume and avoid moderncv version drift.
+\definecolor{rmAccentBlue}{HTML}{3873B3}
+\definecolor{rmMutedGrey}{HTML}{737373}
+\colorlet{color1}{rmAccentBlue}
+\colorlet{color2}{rmMutedGrey}
+
+% Classic style colors are derived early, so override the resolved aliases too.
+\colorlet{sectioncolor}{rmAccentBlue}
+\colorlet{subsectioncolor}{rmAccentBlue}
+\colorlet{bodyrulecolor}{rmAccentBlue}
+\colorlet{quotecolor}{rmAccentBlue}
+\colorlet{pictureframecolor}{rmAccentBlue}
+\colorlet{skillmatrixfullcolor}{rmAccentBlue}
+\colorlet{skillmatrixemptycolor}{rmMutedGrey!30}
+
+\colorlet{namecolor}{black}
+\colorlet{firstnamecolor}{black}
+\colorlet{lastnamecolor}{black}
+\colorlet{titlecolor}{rmMutedGrey}
+\colorlet{addresscolor}{rmMutedGrey}
+\colorlet{headrulecolor}{rmMutedGrey}
+
 % Adjust label column width to reduce wrapping
 \setlength{\hintscolumnwidth}{2.35cm}
 \AtBeginDocument{\recomputelengths}

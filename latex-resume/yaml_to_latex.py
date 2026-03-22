@@ -9,6 +9,7 @@ that can be included in a ModernCV template.
 import yaml
 import argparse
 import sys
+import re
 from pathlib import Path
 
 
@@ -16,12 +17,24 @@ def escape_latex(text):
     """Escape special LaTeX characters in text."""
     if not text:
         return ""
+
+    text = str(text)
+
+    # Preserve already escaped LaTeX special characters (for example, \% in source YAML)
+    protected_escapes = {}
+
+    def _protect_existing_escape(match):
+        token = f"LATEXESCAPETOKEN{len(protected_escapes)}X"
+        protected_escapes[token] = f"\\{match.group(1)}"
+        return token
+
+    text = re.sub(r'\\([%&$#_^{}~])', _protect_existing_escape, text)
     
-    # Replace special LaTeX characters, but be more conservative
-    # Only escape characters that commonly cause issues
+    # Escape LaTeX special characters in raw text.
     replacements = {
-        '\\': r'\textbackslash{}',  # Must be first to avoid double escaping
+        '\\': r'\textbackslash{}',
         '&': r'\&',
+        '%': r'\%',
         '$': r'\$',
         '#': r'\#',
         '^': r'\textasciicircum{}',
@@ -33,6 +46,10 @@ def escape_latex(text):
     
     for char, replacement in replacements.items():
         text = text.replace(char, replacement)
+
+    # Restore user-provided escaped characters after general escaping.
+    for token, value in protected_escapes.items():
+        text = text.replace(token, value)
     
     return text
 

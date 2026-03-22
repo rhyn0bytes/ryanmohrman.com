@@ -192,4 +192,49 @@ If the build process fails:
 4. Commit changes to version control
 5. Repeat as needed
 
+## Session Notes (2026-03-22)
+
+This section captures what was discovered and changed during the latest resume pipeline debugging and content update session.
+
+### 1) YAML -> LaTeX percent escaping bug
+
+- Symptom: Lines containing `%` were getting truncated or malformed in PDF output.
+- Root cause: `yaml_to_latex.py` escaped backslashes before handling `%`, so manually escaped values like `\%` could become `\textbackslash{}%` in generated LaTeX.
+- Fix applied in `yaml_to_latex.py`:
+  - Added explicit `%` escaping for raw text.
+  - Preserved already escaped sequences like `\%`, `\&`, etc. before general escaping.
+  - Restored those preserved sequences after escaping.
+- Result: You can keep normal percentages in YAML (for example `75%`), and generated `.tex` now correctly outputs `75\%`.
+
+### 2) Color drift across moderncv versions
+
+- Symptom: New PDF looked greyscale/less blue than the previously published resume.
+- Root cause: moderncv package and TeX engine version differences changed effective color aliases and defaults.
+- Fix applied in `main_template.tex`:
+  - Pinned explicit palette values to match the published resume.
+  - Overrode resolved classic style aliases (`sectioncolor`, `bodyrulecolor`, `quotecolor`, name/title/address colors, etc.) instead of only `color1`/`color2`.
+- Matched key palette values:
+  - Accent blue: `#3873B3`
+  - Muted gray: `#737373`
+
+### 3) New content review variants added
+
+Two new YAML resume variants were created for future iteration:
+
+- `resume_data_conservative_update.yaml`
+  - Minimal-risk edits.
+  - Targets Staff IC positioning without over-claiming AI experience.
+  - Adds mission section.
+
+- `resume_data_agressive_update.yaml`
+  - Stronger AI-forward positioning for large-company Staff/Principal searches.
+  - Adds mission section and stronger enablement framing.
+
+Note: The file name intentionally uses `agressive` (single `g`) to match what was requested in-session.
+
+### 4) Important follow-up
+
+- Current generator does not yet render the new `mission` section.
+- If you want mission content to appear in the PDF, update `yaml_to_latex.py` to support `mission` and append a rendered mission section in output.
+
 This system allows you to maintain your resume data in a structured, version-controllable format while still producing professional LaTeX output.
