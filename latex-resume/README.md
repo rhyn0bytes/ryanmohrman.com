@@ -125,6 +125,21 @@ certifications:
 - `make install-deps` - Install Python dependencies
 - `make help` - Show available targets
 
+#### Flexible Variant Build Pattern
+
+Use Make variable overrides to build from any YAML file and emit any PDF filename:
+
+```bash
+make clean && make YAML_FILE=file_that_holds_the_data.yaml PDF_OUTPUT=pdf_title.pdf
+```
+
+Current examples:
+
+```bash
+make clean && make YAML_FILE=resume_data_conservative_update.yaml PDF_OUTPUT=resume_conservative.pdf
+make clean && make YAML_FILE=resume_data_agressive_update.yaml PDF_OUTPUT=resume_agressive.pdf
+```
+
 ### Manual Python Script
 
 ```bash

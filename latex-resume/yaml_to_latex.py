@@ -144,6 +144,33 @@ def generate_projects(data):
     return '\n'.join(latex_lines)
 
 
+def generate_mission(data):
+    """Generate LaTeX for mission section."""
+    mission = data.get('mission', {})
+
+    if not mission:
+        return ""
+
+    latex_lines = []
+    heading = mission.get('heading', 'Mission')
+    statement = mission.get('statement', '')
+    focus_areas = mission.get('focus_areas', [])
+    principles = mission.get('principles', [])
+
+    latex_lines.append(f"\\section{{{escape_latex(heading)}}}")
+
+    if statement:
+        latex_lines.append(f"\\cvitem{{}}{{{escape_latex(statement)}}}")
+
+    # Support either focus_areas or principles arrays for backward/forward compatibility.
+    mission_points = focus_areas if focus_areas else principles
+    if mission_points:
+        for point in mission_points:
+            latex_lines.append(f"\\cvlistitem{{{escape_latex(point)}}}")
+
+    return '\n'.join(latex_lines)
+
+
 def generate_education(data):
     """Generate LaTeX for education section."""
     education = data.get('education', [])
@@ -192,6 +219,7 @@ def generate_latex_content(yaml_data):
     skills = generate_skills(yaml_data)
     experience = generate_experience(yaml_data)
     projects = generate_projects(yaml_data)
+    mission = generate_mission(yaml_data)
     education = generate_education(yaml_data)
     certifications = generate_certifications(yaml_data)
     
@@ -202,6 +230,8 @@ def generate_latex_content(yaml_data):
         sections.append(experience)
     if projects:
         sections.append(projects)
+    if mission:
+        sections.append(mission)
     if education:
         sections.append(education)
     if certifications:
