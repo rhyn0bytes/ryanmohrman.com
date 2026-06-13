@@ -137,7 +137,7 @@ Current examples:
 
 ```bash
 make clean && make YAML_FILE=resume_data_conservative_update.yaml PDF_OUTPUT=resume_conservative.pdf
-make clean && make YAML_FILE=resume_data_agressive_update.yaml PDF_OUTPUT=resume_agressive.pdf
+make clean && make YAML_FILE=resume_data_aggressive_update.yaml PDF_OUTPUT=resume_aggressive.pdf
 ```
 
 ### Manual Python Script
